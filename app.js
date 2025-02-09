@@ -56,3 +56,60 @@
 // const str = 'hello';
 // let arr = str.slice(1,3);
 // console.log(typeof arr);
+
+
+
+                            // 4. characters count in a string.
+// function charCount(str, char){
+//     str = str.trim()
+//     console.log(str);
+    
+//     const strArr = str.split('');
+//     let x = strArr.reduce((acc, cur) => {
+//         if (cur === char) acc++;
+//         return acc;
+//     } ,0)
+//     console.log(strArr);
+//     return x;
+// }
+
+// console.log(charCount(' helloww ', 'l'));
+
+//2nd way
+// const characterCount = (word, char) => {
+//     word = word.trim().toLowerCase();
+    
+//     if(word.length === 0){
+//         return false
+//     }
+
+//     let count = word.split('').reduce((accum, curChar) => {
+//         if (curChar === char) accum++;
+//         return accum
+        
+//     }, 0)
+//     return count;
+// }
+// console.log(characterCount(" HeLLow " , 'l'));
+
+
+
+
+
+                        // 5. check tiangles sides.
+// function checkTriangle(s1, s2, s3){
+//     if (s1 === s2 && s2 === s3 && s3 === s1 ) return "equilateral";
+//     else if (s1 === s2 || s2 === s3 || s3 === s1) return "isoscales";
+//     else return "scalene"
+// }
+
+// console.log(checkTriangle(101, 100, 10));
+
+
+const triangleCheck = (x,y,z) => {
+    if (x === y && y === z) return "equilateral";
+    if (x===y || y===z ||  x===z) return 'isoscales'
+    return "scalene"
+}
+
+console.log(triangleCheck(203, 20, 240));
