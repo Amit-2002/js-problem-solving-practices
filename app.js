@@ -254,3 +254,135 @@
 // }
 
 // console.log(countVowels("brrpino"));
+
+
+
+                                // 15. check if the number is power of 2 or not
+// const checkPower = (num) => {
+//     if (num <= 0) return false;
+
+//     for(let i=0; i<num; i++){
+//         if (2**i === num) return true;
+//     }
+//     return false;
+// }
+
+// console.log(checkPower(4));
+// console.log(checkPower(-10));
+// console.log(checkPower(0));
+// console.log(checkPower(20));
+
+
+
+                                    // 16. sum of all element's square
+// const squareSum = (arr) => {
+//     const result = arr.reduce((accum, ele) => accum += ele**2, 0);
+//     return result;
+// }
+
+// console.log(squareSum([1,2,3]));
+
+
+
+                                    // 17. find minimum of array
+// function findMin(arr){
+//     const res = arr.reduce((min, ele) => (ele < min ? ele : min));
+//     return res;
+// }
+// console.log(findMin([1,2,3,100,]));
+// console.log(findMin([1,-2,3,100,-8]));
+
+
+                                    // 18. convert string into camel case.
+// function camelCase (str){
+    // const strArr = str.trim().split(' ');
+    // console.log(strArr);
+
+    // strArr.forEach((element, index) => {
+    //     if (index === 0){
+    //         strArr[index] = element.toLowerCase();
+    //     }
+    //     else{
+    //         strArr[index] = element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+    //     }
+
+    // });
+    // console.log(strArr);
+    // str = strArr.join('');
+    // return str; 
+
+
+    // 2nd way:
+//     console.log(strArr);
+    
+//     const x = strArr.map((ele, index) => {
+//         if(index === 0) return ele.toLowerCase();
+//         else{
+//             const modifyEle = ele.charAt(0).toUpperCase() + ele.slice(1).toLowerCase();
+//             return modifyEle;
+//         }
+//     })
+//     str = x.join('')
+//     return str;
+    
+// }
+
+// console.log(camelCase("Hello good morning"));onsole.log(strArr);
+    
+//     const x = strArr.map((ele, index) => {
+//         if(index === 0) return ele.toLowerCase();
+//         else{
+//             const modifyEle = ele.charAt(0).toUpperCase() + ele.slice(1).toLowerCase();
+//             return modifyEle;
+//         }
+//     })
+//     str = x.join('')
+//     return str;
+    
+// }
+
+// console.log(camelCase("Hello good morning"));
+
+
+
+
+                                        // 19. check for a string starts with the given substring
+// function isStartsWith(str, subStr){
+// //    return str.toLowerCase().startsWith(subStr.toLowerCase())
+
+// // 2nd way:
+//     return str.toLowerCase().slice(0, subStr.length) === subStr.toLowerCase();
+   
+// }
+// console.log(isStartsWith('Hello world', "hello"));
+// console.log(isStartsWith('hello world', "world"));
+
+
+
+
+
+                                    // 20. reverse a string
+// const reverse = (str) => {
+//     const result = str.split('').reverse().join('');
+//     return result;
+// }
+
+// console.log(reverse('hell0'));
+
+
+                                    // 21. MEAN OF AN ARRAY
+// const mean = (arr) => {
+//     const sum = arr.reduce((sum , ele) => sum + ele , 0);
+//     return Math.floor(sum / arr.length);
+// }
+// console.log(mean([1, 2, 3, 4, 4]));
+
+
+                                    // 22. MEDIAN OF AN ARRAY
+function median (arr) {
+    const l = arr.length;
+    if(l%2 === 0) return (arr[l/2] + arr[(l/2)+1])/2
+    else return arr[Math.floor(l/2)] 
+}
+console.log(median([1,2,3,4,5,6,7]));
+console.log(median([1,2,3,4,5,6,7,8]));
