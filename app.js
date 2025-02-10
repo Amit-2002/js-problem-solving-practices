@@ -379,10 +379,55 @@
 
 
                                     // 22. MEDIAN OF AN ARRAY
-function median (arr) {
-    const l = arr.length;
-    if(l%2 === 0) return (arr[l/2] + arr[(l/2)+1])/2
-    else return arr[Math.floor(l/2)] 
-}
-console.log(median([1,2,3,4,5,6,7]));
-console.log(median([1,2,3,4,5,6,7,8]));
+// function median (arr) {
+//     arr.sort((a,b) => a-b);
+//     // console.log(arr);
+//     const l = arr.length;
+//     const mid = Math.floor((arr.length)/2);
+    
+//     if (l%2 === 0) return (arr[mid] + arr[mid-1]) / 2;
+//     else return arr[mid];
+// }
+// console.log(median([100,22,3,44,5,6,7]));
+// console.log(median([1,2,3,4,5,6,7,8]));
+
+
+
+                            // 23. find occurance by returning an obj from array
+// function eleCount(arr){
+//     const obj = {};
+//     for(ele of arr){
+//         if(obj[ele]){
+//             obj[ele] += 1;
+//         }
+//         else{
+//             obj[ele] = 1
+//         }
+//     }
+//     return obj;
+// }
+// console.log(eleCount([1, 20, 2, 1, 30, 2, 3, 30, 1]))
+
+
+
+
+                                // 24. MODE OF AN ARRAY
+// const findMode = (arr) => {
+//     let max = 0;
+//     let mode;
+//     const obj = arr.reduce((accum, curEle) => {
+//         if(accum[curEle]){
+//             accum[curEle] += 1;
+//         }else{accum[curEle] = 1}
+
+//         if (accum[curEle] > max){
+//             max = accum[curEle];
+//             mode = curEle;
+//         }
+//         return  accum;
+//     }, {})
+//     console.log(obj);
+    
+//     return mode;
+// }
+// console.log(findMode([1, 2, 1, 4, 3, 2, 1, 4, 2, 3, 2]));
